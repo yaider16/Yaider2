@@ -1,0 +1,130 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* -----------------------------------------------Estilos De El Div Principal----------------------------------------- */
+.principal{
+	background: linear-gradient(to right, #654ea3, #eaafc8);
+	display: flex;
+	height: 500px;
+
+}
+.ola{
+	position: absolute;
+	top: 300px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.texto h1{
+	color: #fff;
+}
+.texto{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.text-{
+	font-size: 2.7em;
+	font-family: 'Balsamiq Sans', cursive;
+}
+/* --------------------------------------------Fin De Los Estilos De El Div Principal-----------------------------------*/
+
+/*---------------------------------------------Estilos de Imagenes y Galeria-------------------------------------------*/
+.Galeria{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 88%;
+	margin: 0 0 0 50px;
+}
+
+.imgs{
+	width: 400px;
+	height: 400px;
+	margin-top: 25px;
+	box-shadow: 0 0 6px 0 rgb(0 0 0 /75%);
+	border-radius: 10px;
+	position: relative;
+
+	
+}
+.imgs .imagenes{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	transition: box-shadow .6s ease;
+}
+
+.imgs img:hover{
+	cursor: pointer;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.imgs:hover .overlay{
+	height: 100%;
+	cursor: pointer;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.overlay{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	height: 0;
+	background: linear-gradient(60deg, rgba(154,158,175,0.6811099439775911) 39%, rgba(163,159,166,0.6727065826330532) 100%);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all .5s ease;
+}
+
+.overlay h2{
+	color: black;
+	font-family: 'Pacifico', cursive;
+}
+
+
+
+.contenedor-img.active{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	top: 0;
+	left: 0;
+
+}
+
+.contenedor-img.active img{
+	z-index: 3;
+	width: 600px;
+	height: 600px;
+}
+
+
+.contendor-img.active::after{
+	position: fixed;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(211, 211, 211, 0.459);
+}
+
+.contenedor-img{
+	width: 100%;
+	height: 100%;
+}
