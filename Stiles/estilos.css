@@ -5,6 +5,10 @@
 	box-sizing: border-box;
 }
 
+body{
+	width: 100%;
+}
+
 /* -----------------------------------------------Estilos De El Div Principal----------------------------------------- */
 .principal{
 	background: linear-gradient(to right, #654ea3, #eaafc8);
@@ -40,7 +44,7 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	width: 88%;
-	margin: 0 0 0 50px;
+	margin: 0 25px;
 }
 
 .imgs{
@@ -127,4 +131,57 @@
 .contenedor-img{
 	width: 100%;
 	height: 100%;
+}
+/* _---------------------------------------------------------------------------------------*/ 
+
+@media screen and (max-width:800px){
+	.ola{
+		position: absolute;
+		top: 400px;
+		z-index: 8;
+	}
+	.galeria{
+
+	}
+}
+
+
+@media screen and (max-width:430px){
+	.ola{
+		position: absolute;
+		top: 410px;
+		z-index: 8;
+	}
+	#galeria{
+		margin: 0 25px;
+	}
+}
+
+@media screen and (max-width:400px){
+	.ola{
+		position: absolute;
+		top: 420px;
+		z-index: 8;	
+	}
+	.texto{
+		position: absolute;
+		left: 70px;
+		top: 150px;
+	}
+	.principal{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:370px){
+	.ola{
+		position: absolute;
+		top: 430px;
+		z-index: 8;	
+	}
+	.texto{
+		position: absolute;
+		left: 55px;
+		top: 150px;
+	}
 }
